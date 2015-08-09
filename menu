@@ -1,0 +1,38 @@
+using UnityEngine;
+using System.Collections;
+
+public class menu : MonoBehaviour {
+
+	public bool isStart = false;
+	public bool isOptions = false;
+	public bool isQuit = false;
+	public bool isToMain = false;
+	public bool isBathala = false;
+	public bool isGalangKaluluwa = false;
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+
+	void OnMouseDown(){
+		if (isStart) {
+			Application.LoadLevel ("modeSelect");
+		} else if (isOptions) {
+			Application.LoadLevel("options");
+		} else if (isQuit) {
+			Application.Quit();
+		} else if (isToMain) {
+			Application.LoadLevel("menu");
+		} else if (isBathala) {
+			Application.LoadLevel("bathala1");
+		} else if (isGalangKaluluwa) {
+			Application.LoadLevel("galangKaluluwa1");
+		}
+	}
+}
