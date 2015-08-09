@@ -1,0 +1,44 @@
+using UnityEngine;
+using System.Collections;
+
+public class capiz : MonoBehaviour {
+	public bool isToCapiz1 = false;
+	public bool isToCapiz2 = false;
+	public bool isToCapiz3 = false;
+	public bool isToCapiz4 = false;
+	public bool isToCapiz5 = false;
+	public bool isToCapizTrivia1 = false;
+	public bool isToCapizTrivia2 = false;
+	public bool isToCapizTrivia3 = false;
+
+	
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+	
+	void OnMouseDown(){
+		if (isToCapiz1) {
+			Application.LoadLevel("capiz1");
+		} else if (isToCapiz2) {
+			Application.LoadLevel("capiz2");
+		} else if (isToCapiz3) {
+			Application.LoadLevel("capiz3");
+		} else if (isToCapiz4) {
+			Application.LoadLevel("capiz4");
+		} else if (isToCapiz5) {
+			Application.LoadLevel("capiz5");
+		} else if (isToCapizTrivia1) {
+			Application.LoadLevel("capizTrivia1");
+		} else if (isToCapizTrivia2) {
+			Application.LoadLevel("capizTrivia2");
+		} else if (isToCapizTrivia3) {
+			Application.LoadLevel("capizTrivia3");
+		}
+	}
+}
