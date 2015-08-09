@@ -1,0 +1,18 @@
+using UnityEngine;
+using System.Collections;
+
+public class makiling : MonoBehaviour {
+	public bool isMaria = false;
+	public bool isMakiling = false;
+	public bool isMariangMakiling = false;
+
+	void OnMouseDown(){
+		if (isMaria) {
+			Application.LoadLevel("maria");
+		} else if (isMakiling) {
+			Application.LoadLevel("makiling");
+		} else if (isMariangMakiling) {
+			Application.LoadLevel("bathala1");
+		}
+	}
+}
