@@ -1,0 +1,43 @@
+using UnityEngine;
+using System.Collections;
+
+public class forest : MonoBehaviour {
+	public bool isB1 = false;
+	public bool isB2 = false;
+	public bool isB3 = false;
+	public bool isB4 = false;
+	public bool isB5 = false;
+	public bool isInfo = false;
+	public bool isSieraTrivia1 = false;
+	public bool isSieraTrivia2 = false;
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+
+	void OnMouseDown(){
+		if (isB1) {
+			Application.LoadLevel("f2");
+		} else if (isB2) {
+			Application.LoadLevel("f3");
+		} else if (isB3) {
+			Application.LoadLevel("f4");
+		} else if (isB4) {
+			Application.LoadLevel("forestFinal");
+		} else if (isB5) {
+			Application.LoadLevel("f1");
+		} else if (isInfo) {
+			Application.LoadLevel("tikbalangInfo");
+		} else if (isSieraTrivia1) {
+			Application.LoadLevel("sieraTrivia1");
+		} else if (isSieraTrivia2) {
+			Application.LoadLevel("sieraTrivia2");
+		}
+	}
+}
